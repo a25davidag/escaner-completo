@@ -82,6 +82,22 @@ public class Main {
         }else if (semaforo.equals("rojo")) {
             System.out.println("detente");
         }
+
+        //7
+        System.out.print("Ingresa un numero");
+        //sc.nextLine();
+        int numero = sc.nextInt();
+        System.out.println(numero);
+        if (numero == 20) {
+            System.out.println("El numero es correcto");
+        }else if (numero < 19) {
+            System.out.println("El numero es mas alto");
+        } else if (numero >= 21 ) {
+            System.out.println("El numero es mas bajo");
+        }
+
+        //8
+
     }
     }
 
