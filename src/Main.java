@@ -8,14 +8,14 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingresa una temperatura");
         int temperatura = sc.nextInt();
-        System.out.println(temperatura);
+        //System.out.println(temperatura);  Esto lo que hace es que repita el resultado
 
         if (temperatura < 0) {
-            System.out.println(" Hace frio");
+            System.out.println("Hace frio");
         } else if (temperatura > 30) {
-            System.out.println(" Hace calor");
+            System.out.println("Hace calor");
         } else {
-            System.out.println(" Clima Templado");
+            System.out.println("Clima Templado");
 
         }
 
@@ -23,7 +23,7 @@ public class Main {
         System.out.print("Dectector de color");
         sc.nextLine();
         String color = sc.nextLine();
-        System.out.println(color);
+        //System.out.println(color);
         if (color.equals("rojo")) {
             System.out.println("color primario ");
         } else if (color.equals("verde")) {
@@ -38,7 +38,7 @@ public class Main {
         System.out.print("Velocidad del coche");
         //sc.nextLine();  cuidado
         int velocidad = sc.nextInt();
-        System.out.println(velocidad);
+        //System.out.println(velocidad);
         if (velocidad > 120) {
             System.out.println("Multa");
         } else if (0 < velocidad && velocidad <= 120) {
@@ -49,7 +49,7 @@ public class Main {
         System.out.println("Ingresa un animal");
         sc.nextLine();
         String animal = sc.nextLine();
-        System.out.println(animal);
+        //System.out.println(animal);
         if (animal.equals("gato") || animal.equals("perro")) {
             System.out.println("Animal Domestico");
         }else if (animal.equals("tigre") || animal.equals("leon")) {
@@ -61,7 +61,7 @@ public class Main {
         //5
         System.out.print("Ingresa edad");
         int edad = sc.nextInt();
-        System.out.println(edad);
+        //System.out.println(edad);
         if (edad < 12){
             System.out.println("No puede entrar");
         }else if (12 <= edad && edad <= 17) {
@@ -74,7 +74,7 @@ public class Main {
         System.out.print("color del semaforo");
         sc.nextLine();
         String semaforo = sc.nextLine();
-        System.out.println(semaforo);
+        //System.out.println(semaforo);
         if (semaforo.equals("verde")){
             System.out.println("avanza");
         }else if (semaforo.equals("amarillo")) {
@@ -87,7 +87,7 @@ public class Main {
         System.out.print("Ingresa un numero");
         //sc.nextLine();
         int numero = sc.nextInt();
-        System.out.println(numero);
+        //System.out.println(numero);
         if (numero == 20) {
             System.out.println("El numero es correcto");
         }else if (numero < 19) {
@@ -97,7 +97,22 @@ public class Main {
         }
 
         //8
+        System.out.println("Ingresa palabra");
+        sc.nextLine();
+        String palabra1 = sc.nextLine();
+        System.out.println("Ingresa palabra");
+        //sc.nextLine();
+        String palabra2 = sc.nextLine();
+        if (palabra1.equals(palabra2)) {
+            System.out.println("Las palabras coinciden");
+        }else {
+            System.out.println("No coiciden");
+        }
 
+        //9
+        System.out.println("Ingresa voto");
+        sc.nextLine();
+        String
     }
     }
 
