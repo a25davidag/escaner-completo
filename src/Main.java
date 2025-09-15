@@ -110,9 +110,42 @@ public class Main {
         }
 
         //9
-        System.out.println("Ingresa voto");
-        sc.nextLine();
-        String
+        // Pedir los 3 votos
+        System.out.print("Ingresa el primer voto (A, B o C): ");
+        String a = sc.nextLine().toUpperCase();
+
+        System.out.print("Ingresa el segundo voto (A, B o C): ");
+        String b = sc.nextLine().toUpperCase();
+
+        System.out.print("Ingresa el tercer voto (A, B o C): ");
+        String c = sc.nextLine().toUpperCase();
+
+        // Contadores
+        int votosA = 0, votosB = 0, votosC = 0;
+
+        // Sumar votos
+        if (a.equals("A")) votosA++;
+        else if (a.equals("B")) votosB++;
+        else if (a.equals("C")) votosC++;
+
+        if (b.equals("A")) votosA++;
+        else if (b.equals("B")) votosB++;
+        else if (b.equals("C")) votosC++;
+
+        if (c.equals("A")) votosA++;
+        else if (c.equals("B")) votosB++;
+        else if (c.equals("C")) votosC++;
+
+        // Determinar ganador
+        if (votosA > votosB && votosA > votosC) {
+            System.out.println("Ganó A con " + votosA + " votos.");
+        } else if (votosB > votosA && votosB > votosC) {
+            System.out.println("Ganó B con " + votosB + " votos.");
+        } else if (votosC > votosA && votosC > votosB) {
+            System.out.println("Ganó C con " + votosC + " votos.");
+        } else {
+            System.out.println("Hay empate.");
+        }
     }
     }
 
