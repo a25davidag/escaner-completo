@@ -123,7 +123,7 @@ public class Main {
         // Contadores
         int votosA = 0, votosB = 0, votosC = 0;
 
-        // Sumar votos
+        // Sumar votos,1:si tiene a votos en A 2: si no era a pero si B 3:Si no eran ninguna en C
         if (a.equals("A")) votosA++;
         else if (a.equals("B")) votosB++;
         else if (a.equals("C")) votosC++;
@@ -136,7 +136,7 @@ public class Main {
         else if (c.equals("B")) votosB++;
         else if (c.equals("C")) votosC++;
 
-        // Determinar ganador
+        // La suma y resultado
         if (votosA > votosB && votosA > votosC) {
             System.out.println("Ganó A con " + votosA + " votos.");
         } else if (votosB > votosA && votosB > votosC) {
@@ -147,8 +147,37 @@ public class Main {
             System.out.println("Hay empate.");
         }
 
-
-        fdgffgdf
+        // Ejercicio 10
+        System.out.print("ingresa numeo");
+        double n1 = sc.nextDouble();
+        System.out.print("ingresa numeo");
+        double n2 = sc.nextDouble();
+        System.out.print("ingresa operacion");
+        String operacion = sc.next();
+        double resultado;
+        switch (operacion) {
+            case "+":
+                resultado = n1 + n2;
+                break;
+            case "-":
+                resultado = n1 - n2;
+                break;
+            case "*":
+                resultado = n1 * n2;
+                break;
+            case  "/":
+                if (n2 != 0) {
+                    resultado = n1 / n2;
+                }else {
+                    System.out.println("No se puede dividir por 0");
+                    return;
+                }
+                break;
+              default:
+                  System.out.println("Operacion no valida");
+                  return;
+        }
+        System.out.println("El resultado es: " + resultado);
     }
 
     }
