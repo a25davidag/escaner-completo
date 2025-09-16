@@ -112,29 +112,29 @@ public class Main {
         //9
         // Pedir los 3 votos
         System.out.print("Ingresa el primer voto (A, B o C): ");
-        String a = sc.nextLine().toUpperCase();
+        String primervoto = sc.nextLine().toUpperCase();
 
         System.out.print("Ingresa el segundo voto (A, B o C): ");
-        String b = sc.nextLine().toUpperCase();
+        String segundovoto = sc.nextLine().toUpperCase();
 
         System.out.print("Ingresa el tercer voto (A, B o C): ");
-        String c = sc.nextLine().toUpperCase();
+        String tercervoto = sc.nextLine().toUpperCase();
 
         // Contadores
         int votosA = 0, votosB = 0, votosC = 0;
 
         // Sumar votos,1:si tiene a votos en A 2: si no era a pero si B 3:Si no eran ninguna en C
-        if (a.equals("A")) votosA++;
-        else if (a.equals("B")) votosB++;
-        else if (a.equals("C")) votosC++;
+        if (primervoto.equals("A")) votosA++;
+        else if (primervoto.equals("B")) votosB++;
+        else if (primervoto.equals("C")) votosC++;
 
-        if (b.equals("A")) votosA++;
-        else if (b.equals("B")) votosB++;
-        else if (b.equals("C")) votosC++;
+        if (segundovoto.equals("A")) votosA++;
+        else if (segundovoto.equals("B")) votosB++;
+        else if (segundovoto.equals("C")) votosC++;
 
-        if (c.equals("A")) votosA++;
-        else if (c.equals("B")) votosB++;
-        else if (c.equals("C")) votosC++;
+        if (tercervoto.equals("A")) votosA++;
+        else if (tercervoto.equals("B")) votosB++;
+        else if (tercervoto.equals("C")) votosC++;
 
         // La suma y resultado
         if (votosA > votosB && votosA > votosC) {
