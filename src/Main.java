@@ -83,7 +83,8 @@ public class Main {
             System.out.println("detente");
         }
 
-        //7
+        //7 Juego de adivinanza: Ingresa un número secreto y luego una suposición. Indica si acertó, si
+        //el número secreto es mayor o menor.
         System.out.print("Ingresa un numero");
         //sc.nextLine();
         int numero = sc.nextInt();
@@ -96,7 +97,8 @@ public class Main {
             System.out.println("El numero es mas bajo");
         }
 
-        //8
+        //8 . Comparador de palabras: Ingresa dos palabras. Si son iguales, muestra 'Coinciden'. Si no,
+        //'No coinciden'.
         System.out.println("Ingresa palabra");
         sc.nextLine();
         String palabra1 = sc.nextLine();
@@ -109,7 +111,8 @@ public class Main {
             System.out.println("No coiciden");
         }
 
-        //9
+        //9 Sistema de votación: Ingresa 3 votos (String: 'A', 'B' o 'C'). Muestra quién ganó o si hay
+        //empate
         // Pedir los 3 votos
         System.out.print("Ingresa el primer voto (A, B o C): ");
         String primervoto = sc.nextLine().toUpperCase();
@@ -147,7 +150,8 @@ public class Main {
             System.out.println("Hay empate.");
         }
 
-        // Ejercicio 10
+        // Ejercicio 10  Calculadora básica: Ingresa dos números y una operación (+, -, *, /). Muestra el resultado
+        //según la operación.
         System.out.print("ingresa numeo");
         double n1 = sc.nextDouble();
         System.out.print("ingresa numeo");
